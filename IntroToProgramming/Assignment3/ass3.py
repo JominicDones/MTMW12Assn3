@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
 
-This is a temporary script file.
+File that runs code necessary for MTMW12 Assignment 3. I wasn't able to get 
+nearly as much done as I'd hoped as I'm still getting to grips with Python and 
+Git and I also missed the class and wasn't able to catch up. 
+
+Hopefully the code is styled correctly and commented okay at least.
+
 """
 from __future__ import division
 import numpy as np
@@ -13,9 +17,9 @@ def pressureCalc(_P_a, _P_b, _y, _L):
     Calculates the pressure as a function of y
     
     Input: _P_a : pressure at ground
-    Input: _P_B : pressure difference (?)at maximum height
+    Input: _P_B : pressure difference at maximum height
     Input: _y : height
-    Input: _L : characteristic length scale (??)
+    Input: _L : characteristic length scale
     Variable: pressure : the pressure as a function of height(y)
     """
     pressure = np.zeros(len(_y))
@@ -235,7 +239,10 @@ def main():
     is only 1st order accurate, as opposed to 2nd. 
     
     An experiment to test this would be to measure the error relative to the 
-    step size and see if it scales as the square of the order. 
+    step size and see if it scales as the square of the order of accuracy.
+    
+    (2) A more accurate differentiation scheme would be a 4th order accurate 
+    central difference scheme. 
     '''
     
 main()
